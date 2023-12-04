@@ -399,6 +399,7 @@ color:#F89F9F;
 .banner-avatar {
 	max-height: 100%;
 	border-radius: 50%;
+	width: 160px;
 }
 .hero-text h1 {
 	color: #fff;
