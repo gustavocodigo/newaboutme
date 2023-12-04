@@ -192,8 +192,9 @@ color:#F89F9F;
 	float: right;
 }
 .header {
+	padding-left: 10px;
+	min-width: 990px;
 	position: fixed;
-	width: 100%;
 	background: rgb(27, 27, 27);
 	z-index: 50;
 	border-radius: 0;
@@ -383,6 +384,8 @@ color:#F89F9F;
 	background-size: cover;
 	position: relative;
 	border-bottom: 2px #F6464A solid;
+	
+
 }
 .banner-container > img {
 	width: 100%
@@ -393,6 +396,8 @@ color:#F89F9F;
 	top: 0px;
 	left: 0px;
 	right: 0px;
+		height: 100svh
+
 }
 
 
@@ -431,9 +436,11 @@ color:#F89F9F;
 	text-align: center;
 	vertical-align: top;
 	width: 60px;
+	display: relative;
+	
 }
 a.arrow-link {
-	color: #F6464A;
+	color: #d5d5d5;
 }
 a.arrow-link:hover {
 	color: #fff;
@@ -785,6 +792,13 @@ hr {
 body {
 	margin: 0;
 	font-family: Arial, sans-serif;
+	max-width: 990px;
+	margin: auto;
+	position: relative;
+	background-color: #1d1a1ae4;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	color: white;
+
 }
 #navigation {
 	position: fixed;
