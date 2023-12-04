@@ -194,8 +194,7 @@ color:#F89F9F;
 .header {
 	position: fixed;
 	width: 100%;
-	max-width: 100%;
-	background: rgba(27, 27, 27, 0.31);
+	background: rgb(27, 27, 27);
 	z-index: 50;
 	border-radius: 0;
 	top: 0px;
@@ -375,7 +374,7 @@ color:#F89F9F;
 }
 /*--- Banner ----*/
 .banner-container {
-	max-width: 100%;
+	width: 100%;
 	position: relative;
 	padding: 0px;
 	box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
@@ -965,7 +964,7 @@ footer {
 	background-size: contain;
 }
 .banner-container > img {
-	max-width: 100%;
+	width: 100%;
 	height: 240px;
 }
 .responsive-headline {
@@ -1165,9 +1164,4 @@ nav#filter li {
 }
 .isotopeWrapper article {
 	margin: 0px;
-}
-
-
-*{
-	box-sizing: border-box;
 }
