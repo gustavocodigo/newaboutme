@@ -244,7 +244,7 @@ color:#F89F9F;
 /*.carousel-inner*/
 #myCarousel {
 	margin-top: 50px;
-	border-bottom: 4px solid #F6464A;
+	border-bottom: 4px solid rgb(216, 185, 185);
 }
 .carousel-inner > .item {
 }
@@ -438,13 +438,14 @@ a.arrow-link:hover {
 	color: #fff;
 }
 .colord {
-	background: #F6464A;
+	background: #ffffff;
+	color: black;
 }
 .colord p {
-	color: #FFB6B6;
+	color: #080707;
 }
 .colord h3 {
-	color: #fff;
+	color: #000000;
 }
 .hero-button {
 	text-align: center;
