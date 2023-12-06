@@ -88,12 +88,12 @@
       </div>
     </div>
 
-    <div style="z-index: 20; position: relative; top: -124px">
+    <div style="z-index: 20; position: relative; top: -90px">
       <div id="gugs-sprite-out"
-          style="translate: -50% 0;position: absolute; overflow:hidden; width: calc(35px * 4); height:calc(35px * 4); display: flex; align-items:center; justify-content:center">
+          style="translate: -50% 0;position: absolute; overflow:hidden; width: calc(35px * 3); height:calc(35px * 3); display: flex; align-items:center; justify-content:center; ">
           <img id="devgugs-img"
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGkAAAAjCAYAAACXQSQwAAABr0lEQVR42u2ZrU8DQRDF78KYQzUBAfwDaPSFBElSiwCBJHjEiSYokooKPEEiMFg0JKQaCxpRRJsQRGtoCnOwRzkoKeR2dmf7nprLif31zcfubSmCvBfBAiQJQpKQJAhJgpAkJAlCkqDwkvTSH4x+/HHzSRwCB4VqjHknxWOTg0I1RpLHNgeFbIwvhSK6J/lizH+MlB7DVXKQRmNmqYv+lCSfu2g3XS7is3YnOA7SbgxrezON9k/beXx5tBXVDy+C4iCNxvAY5c7mQjEFcrKX5gzMIsUjxUHajBnXSi358nzTeHtO6kW83hwEwUFajTFFwzF3NBfM8wcHi2NTUDZPdhIcpNGY8u3G0mJtZEavixsQ2xyk1ZhpdJA1oizL1HOQdmO4WCa9O241g+AgzcZMy/rYfYo1c5BmY34rFukEeHHj4JsxsyT8M4skuZfE2OU1bE4Y8g2oShbJA4NNFtJaveW1NlYXcoOu73vxztq7WeddN11r1u/053IeJ+OOYQojbr+b5KKr7nrDIr56cNvhn+sP3e5JZSPGTXK997j+Lqp6faoKxIcPRpzuICQJmqxX8sFUTZIRAZ0AAAAOZVhJZk1NACoAAAAIAAAAAAAAANJTkwAAAABJRU5ErkJggg=="
-              style="scale:4; position:relative; transform: translateX(35%);image-rendering: pixelated;">
+              style="scale:3; position:relative; transform: translateX(35%);image-rendering: pixelated;">
       </div>
   
       <script>
@@ -123,11 +123,12 @@
   
   
               const position = {
-                  x: 84
+                  x: 50
               }
 
               speed = 0.07
               function tick(time) {
+                 // {return}
                   currentState = states.GUGS_IDLE
   
                   if (pressed_keys["ArrowLeft"] == true) {
@@ -142,10 +143,10 @@
                   }
                   if (currentState == states.GUGS_WALKING) {
                       timer = timer + time
-                      if (timer > 0.19) {
+                      if (timer > 0.17) {
                           timer = 0
   
-                          img.style.left = "-" + (currentSprite * 35 * 4) + "px"
+                          img.style.left = "-" + (currentSprite * 35 * 3) + "px"
                           currentSprite += 1
                           if (currentSprite > 2) currentSprite = 0
   
@@ -159,7 +160,7 @@
                       }
                   } else if (currentState == states.GUGS_IDLE) {
                       currentSprite = 1
-                      img.style.left = "-" + (currentSprite * 35 * 4) + "px"
+                      img.style.left = "-" + (currentSprite * 35 * 3) + "px"
   
                   } else {
                       timer = 0
@@ -175,7 +176,7 @@
                   }
 
                   if (position.x < 10) position.x = 10
-                  if (position.x > 86)position.x = 86
+                  if (position.x > 82)position.x = 82
                   document.querySelector("#gugs-sprite-out").style.left = position.x + '%';
               }
   
